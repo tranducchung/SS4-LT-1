@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VHTM</title>
+</head>
+<button id="click1" onclick="play()">Play</button>
+<body>
+<script>
+function play() {
+    let x = parseInt(prompt("Nhập khoảng muốn chơi :"));
+    let y = Math.floor(Math.random()*x);
+    let z = parseInt(prompt("Nhập số muốn đoán : "));
+    for (let i=0;;i++){
+        if(z===y){
+            alert("Chúc mừng bạn đã đoán đúng");
+            break;
+        }else if(z<y){
+            alert("Tăng lên");
+           z = parseInt(prompt("Nhập số muốn đoán: "))
+        }else if(z>y){
+            alert("Giảm xuống");
+           z = parseInt(prompt("Nhập số muốn đoán: "))
+        }
+        if(i===2){
+            alert("Bạn đã hết lượt chơi");
+            break;
+        }
+    }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VHTM</title>
+</head>
+<body>
+<script>
+    let a = 0;
+    let b = 1;
+    let count=0;
+    for (count; count<100;count++){
+        a=a+b;
+        b=b+a;
+        if(a%5===0){alert(a + " là số đầu tiên trong dãy fibonaci chia hết cho 5");
+        break;}
+        else if(b%5===0){alert(b+" là số đầu tiên trong dãy fibonaci chia hết cho 5");
+        break;}
+    }
+</script>
+</body>
+</html>
